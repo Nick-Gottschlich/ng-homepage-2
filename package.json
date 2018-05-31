@@ -1,0 +1,35 @@
+{
+  "name": "Nick_Gottschlich's_Homepage",
+  "description": "Nick Gottschlichs Homepage",
+  "author": "Nick Gottschlich",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "devicon": "^2.0.0",
+    "gatsby": "^1.9.247",
+    "gatsby-image": "^1.0.51",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-sharp": "^1.6.44",
+    "gatsby-plugin-styled-components": "^2.0.11",
+    "gatsby-plugin-typography": "^1.7.18",
+    "gatsby-remark-copy-linked-files": "^1.5.32",
+    "gatsby-remark-images": "^1.5.63",
+    "gatsby-source-filesystem": "^1.5.36",
+    "gatsby-transformer-remark": "^1.7.41",
+    "gatsby-transformer-sharp": "^1.6.24",
+    "styled-components": "^2.2.3",
+    "typography-theme-sutro": "^0.15.10"
+  },
+  "devDependencies": {
+    "prettier": "^1.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nick-Gottschlich/ng-homepage-2"
+  }
+}
