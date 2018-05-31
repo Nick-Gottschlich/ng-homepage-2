@@ -1,14 +1,14 @@
 // NPM
-import React from "react"
-import styled from "styled-components"
-import Link from "gatsby-link"
+import React from 'react';
+import styled from 'styled-components';
+import Link from 'gatsby-link';
 
 // Local
-import { mainColor } from "../utils/constants.js"
+import { mainColor } from '../utils/constants.js';
 
 const PageWrapper = styled.div`
   margin: 0 auto;
-`
+`;
 
 const Header = styled.div`
   display: flex;
@@ -22,7 +22,7 @@ const Header = styled.div`
   padding-bottom: 0.5rem;
 
   background-color: ${mainColor};
-`
+`;
 
 const HomeLink = styled.h3`
   color: white;
@@ -35,7 +35,7 @@ const HomeLink = styled.h3`
   &:hover {
     text-decoration: underline;
   }
-`
+`;
 
 const HeaderLink = styled.h3`
   color: white;
@@ -48,41 +48,34 @@ const HeaderLink = styled.h3`
   &:hover {
     text-decoration: underline;
   }
-`
+`;
 
 const HeaderLinks = styled.div`
   display: flex;
   justify-content: space-between;
-`
+`;
 
-export default ({ children, data }) =>
+export default ({ children, data }) => (
   <PageWrapper>
     <Header>
       <Link to={`/`}>
-        <HomeLink>
-          Nick Gottschlich's Homepage
-        </HomeLink>
+        <HomeLink>Nick Gottschlich's Homepage</HomeLink>
       </Link>
       <HeaderLinks>
         <Link to={`/`}>
-          <HeaderLink>
-            About
-          </HeaderLink>
+          <HeaderLink>About</HeaderLink>
         </Link>
-        <Link to={`/blog`} style={{ textUnderline: "none" }}>
-          <HeaderLink>
-            Blog
-          </HeaderLink>
+        <Link to={`/blog`} style={{ textUnderline: 'none' }}>
+          <HeaderLink>Blog</HeaderLink>
         </Link>
         <Link to={`/projects`}>
-          <HeaderLink>
-            Projects
-          </HeaderLink>
+          <HeaderLink>Projects</HeaderLink>
         </Link>
       </HeaderLinks>
     </Header>
-    { children() }
+    {children()}
   </PageWrapper>
+);
 
 export const query = graphql`
   query LayoutQuery {
@@ -92,4 +85,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

@@ -1,9 +1,9 @@
-import React from "react"
+import React from 'react';
 
 export default ({ data }) => {
-  console.log(data)
-  return <div>Hello world</div>
-}
+  console.log(data);
+  return <div>Hello world</div>;
+};
 
 export const query = graphql`
   query MyFilesQuery {
@@ -18,4 +18,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

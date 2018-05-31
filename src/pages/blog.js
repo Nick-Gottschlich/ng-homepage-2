@@ -1,10 +1,10 @@
 // NPM
-import React from "react"
-import styled from "styled-components"
-import Link from "gatsby-link"
+import React from 'react';
+import styled from 'styled-components';
+import Link from 'gatsby-link';
 
 // Local
-import { hoverColor, blockTextColor } from "../utils/constants"
+import { hoverColor, blockTextColor } from '../utils/constants';
 
 const StyledLink = styled(Link)`
   color: black;
@@ -19,7 +19,7 @@ const StyledLink = styled(Link)`
 const PaddingWrapper = styled.div`
   padding-left: 2rem;
   padding-right: 2rem;
-`
+`;
 
 const BlogPageTitle = styled.h1`
   padding-top: 3rem;
@@ -32,65 +32,58 @@ const BlogPageTitle = styled.h1`
   margin: 0;
 
   text-decoration: underline;
-`
+`;
 
 const NumPosts = styled.h4`
   padding-top: 0.5rem;
   margin: 0;
 
   color: ${blockTextColor};
-`
+`;
 
 const BlogPostTitle = styled.h3`
   padding-top: 2rem;
   margin: 0;
-`
+`;
 
 const BlogPostDate = styled.span`
   font-size: 1rem;
   color: #6f7070;
-`
+`;
 
 const BlogPostSummary = styled.p`
   padding-top: 0.5rem;
   margin: 0;
 
   text-decoration: none;
-`
-
+`;
 
 export default ({ data }) => {
-  console.log(data)
+  console.log(data);
   return (
     <PaddingWrapper>
-      <BlogPageTitle>
-        Java-off-script
-      </BlogPageTitle>
+      <BlogPageTitle>Java-off-script</BlogPageTitle>
       <NumPosts>
         {data.allMarkdownRemark.totalCount} Posts (Go ahead, click them!)
       </NumPosts>
-      {data.allMarkdownRemark.edges.map(({ node }) =>
+      {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <StyledLink to={node.fields.slug}>
             <BlogPostTitle>
-              {node.frontmatter.title}{" "}
-              <BlogPostDate>
-                --- {node.frontmatter.date}
-              </BlogPostDate>
+              {node.frontmatter.title}{' '}
+              <BlogPostDate>--- {node.frontmatter.date}</BlogPostDate>
             </BlogPostTitle>
-            <BlogPostSummary>
-              {node.excerpt}
-            </BlogPostSummary>
+            <BlogPostSummary>{node.excerpt}</BlogPostSummary>
           </StyledLink>
         </div>
-      )}
+      ))}
     </PaddingWrapper>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
@@ -107,4 +100,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
