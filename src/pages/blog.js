@@ -66,6 +66,9 @@ export default ({ data }) => {
       <NumPosts>
         {data.allMarkdownRemark.totalCount} Posts (Go ahead, click them!)
       </NumPosts>
+      <h2>
+        The blog posts from below are archived. You can view my most recent blog posts at <a href="https://medium.com/@nickpgott"> https://medium.com/@nickpgott</a>
+      </h2>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <StyledLink to={node.fields.slug}>

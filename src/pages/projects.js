@@ -91,13 +91,12 @@ export default ({ data }) => (
       </ProjectLink>
       <ProjectContainer>
         <ProjectImage>
-          <Img sizes={data.shrugImage.sizes} />
+          <a href="https://github.com/Nick-Gottschlich/Social-Amnesia" target="_blank">
+            <Img sizes={data.socialAmnesiaLogoImage.sizes} />
+          </a>
         </ProjectImage>
         <ProjectSummaryText>
-          Social Amensia is an application to help you manage your social media
-          accounts. It will wipe out posts older than a certain date unless you
-          choose to white list them. It is under active development but is
-          currently functional for reddit. It is written in Python.
+          Completely free and open source social media management software I designed from the ground up. Fully installable with a GUI, it allows the user to automatically wipe their reddit and twitter posts, comments, tweets, and favorites, on a schedule, with modifiers to whitelist specific items based on user choice or quantifiers. Language: Python
         </ProjectSummaryText>
       </ProjectContainer>
       {/* Tril */}
@@ -109,7 +108,9 @@ export default ({ data }) => (
       </ProjectLink>
       <ProjectContainer>
         <ProjectImage>
-          <Img sizes={data.trilImage.sizes} />
+          <a href="https://chrome.google.com/webstore/detail/tril/dkneemnajjjblcgpdfpmcmihdjclpopj?hl=en-US&gl=US" target="_blank">
+            <Img sizes={data.trilImage.sizes} />
+          </a>
         </ProjectImage>
         <ProjectSummaryText>
           I wanted to learn how browser extensions work, so I built a{' '}
@@ -147,7 +148,9 @@ export default ({ data }) => (
       </ProjectLink>
       <ProjectContainer>
         <ProjectImage>
-          <Img sizes={data.cliTerm2Image.sizes} />
+          <a href="https://github.com/Nick-Gottschlich/cliTerm2" target="_blank">
+            <Img sizes={data.cliTerm2Image.sizes} />
+          </a>
         </ProjectImage>
         <ProjectSummaryText>
           I hope to eventually grow this into a full fledged customization suite
@@ -169,7 +172,9 @@ export default ({ data }) => (
       </ProjectLink>
       <ProjectContainer>
         <ProjectImage>
-          <Img sizes={data.binaryBrosImage.sizes} />
+          <a href="https://nickpgott.com/files/WebBuild/WebBuild.html">
+            <Img sizes={data.binaryBrosImage.sizes} />
+          </a>
         </ProjectImage>
         <ProjectSummaryText>
           A co-op M.C. Escher style puzzle-platformer where you act as a bit in
@@ -194,7 +199,9 @@ export default ({ data }) => (
       </ProjectLink>
       <ProjectContainer>
         <ProjectImage>
-          <Img sizes={data.sparqlImage.sizes} />
+          <a href="https://docs.data.world/tutorials/sparql/index.html" target="_blank">
+            <Img sizes={data.sparqlImage.sizes} />
+          </a>
         </ProjectImage>
         <ProjectSummaryText>
           Have you ever wanted to use the baddest data-science query langauge in
@@ -215,7 +222,9 @@ export default ({ data }) => (
       </ProjectLink>
       <ProjectContainer>
         <ProjectImage>
-          <Img sizes={data.parrotImage.sizes} />
+          <a href="https://github.com/Nick-Gottschlich/PPMadness">
+            <Img sizes={data.parrotImage.sizes} />
+          </a>
         </ProjectImage>
         <ProjectSummaryText>
           I wanted to learn react native so I made an simple app that spawns
@@ -257,7 +266,7 @@ export const query = graphql`
         ...GatsbyImageSharpSizes_tracedSVG
       }
     }
-    shrugImage: imageSharp(id: { regex: "assets/shrug.jpg/" }) {
+    socialAmnesiaLogoImage: imageSharp(id: { regex: "assets/SocialAmnesiaLogo.png/" }) {
       sizes {
         ...GatsbyImageSharpSizes_tracedSVG
       }
