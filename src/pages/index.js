@@ -12,13 +12,14 @@ import {
   pythonIcon,
   gitIcon,
   githubIcon,
-  chromeIcon,
+  nodejsIcon,
   lessIcon,
   githubContactIcon,
   twitterIcon,
   linkedinIcon,
   jenkinsIcon,
   jestIcon,
+  reduxIcon,
 } from '../assets/SVGs.js';
 import { mainColor, hoverColor, blockTextColor } from '../utils/constants.js';
 
@@ -199,19 +200,25 @@ export default ({ data }) => (
             <a href="https://reactjs.org/">
               {reactIcon}
             </a>
-            <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML">
-              {html5Icon}
+            <a href="https://redux.js.org/">
+              {reduxIcon}
+            </a>
+            <a href="https://www.python.org/">
+              {pythonIcon}
             </a>
           </SkillsRow>
           <SkillsRow>
+            <a href="https://nodejs.org/en/">
+              {nodejsIcon}
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML">
+              {html5Icon}
+            </a>
             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
               {css3Icon}
             </a>
             <a href="http://lesscss.org/">
               {lessIcon}
-            </a>
-            <a href="https://www.python.org/">
-              {pythonIcon}
             </a>
           </SkillsRow>
           <SkillsRow>
@@ -221,11 +228,6 @@ export default ({ data }) => (
             <a href="https://github.com/">
               {githubIcon}
             </a>
-            <a href="https://developers.google.com/web/tools/chrome-devtools/">
-              {chromeIcon}
-            </a>
-          </SkillsRow>
-          <SkillsRow>
             <a href="https://jenkins.io/">
               {jenkinsIcon}
             </a>
