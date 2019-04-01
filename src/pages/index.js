@@ -17,6 +17,8 @@ import {
   githubContactIcon,
   twitterIcon,
   linkedinIcon,
+  jenkinsIcon,
+  jestIcon,
 } from '../assets/SVGs.js';
 import { mainColor, hoverColor, blockTextColor } from '../utils/constants.js';
 
@@ -191,19 +193,45 @@ export default ({ data }) => (
         <SkillsText>Skills</SkillsText>
         <DevIconContainer>
           <SkillsRow>
-            {javascriptIcon}
-            {reactIcon}
-            {html5Icon}
+            <a href="https://developer.mozilla.org/en-US/docs/Web/javascript">
+              {javascriptIcon}
+            </a>
+            <a href="https://reactjs.org/">
+              {reactIcon}
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML">
+              {html5Icon}
+            </a>
           </SkillsRow>
           <SkillsRow>
-            {css3Icon}
-            {lessIcon}
-            {pythonIcon}
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+              {css3Icon}
+            </a>
+            <a href="http://lesscss.org/">
+              {lessIcon}
+            </a>
+            <a href="https://www.python.org/">
+              {pythonIcon}
+            </a>
           </SkillsRow>
           <SkillsRow>
-            {gitIcon}
-            {githubIcon}
-            {chromeIcon}
+            <a href="https://git-scm.com/">
+              {gitIcon}
+            </a>
+            <a href="https://github.com/">
+              {githubIcon}
+            </a>
+            <a href="https://developers.google.com/web/tools/chrome-devtools/">
+              {chromeIcon}
+            </a>
+          </SkillsRow>
+          <SkillsRow>
+            <a href="https://jenkins.io/">
+              {jenkinsIcon}
+            </a>
+            <a href="https://jestjs.io/">
+              {jestIcon}
+            </a>
           </SkillsRow>
         </DevIconContainer>
       </PaddingWrapper>
