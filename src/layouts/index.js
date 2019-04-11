@@ -68,6 +68,9 @@ export default ({ children, data }) => (
         <Link to={`/blog`} style={{ textUnderline: 'none' }}>
           <HeaderLink>Blog</HeaderLink>
         </Link>
+        <Link to={`/talks`}>
+          <HeaderLink>Talks</HeaderLink>
+        </Link>
         <Link to={`/projects`}>
           <HeaderLink>Projects</HeaderLink>
         </Link>
