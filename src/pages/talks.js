@@ -56,8 +56,20 @@ export default () => (
       Talk done at the Austin Python Monthly Meetup, April 11th 2019
     </TalkSummaryText>
     <div>
-      <a href="https://nickpgott.com/files/AbusingSocialMediaAPIs.pdf" target="_blank">Link to Slides</a>
+      <a href="http://nickpgott.com/files/AbusingSocialMediaAPIs.pdf" target="_blank">Link to Slides</a>
     </div>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/wPv_pLofedU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <TalkTitle>
+      Absolute Unit Testing with Jest and Enzyme
+    </TalkTitle>
+    <TalkSummaryText>
+      Talk done at the AustinJS Monthly Meetup, Feb 18th 2020
+    </TalkSummaryText>
+    <div>
+      <a href="http://nickpgott.com/files/AbsoluteUnitTesting.pdf" target="_blank">Link to Slides</a>
+      <br/>
+      <a href="https://github.com/Nick-Gottschlich/unit-test-talk" target="_blank">Link to Example App</a>
+    </div>
   </PaddingWrapper>
 );

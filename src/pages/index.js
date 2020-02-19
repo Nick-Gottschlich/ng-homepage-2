@@ -183,8 +183,9 @@ export default ({ data }) => (
         Software Engineer, Anime and Video Game Nerd, Occasionally Human Being
       </BelowNameText>
       <SummaryText>
-        I work at BazaarVoice. My focus is on front-end development, with a bit
-        of data science mixed in. In my free time I like to build somewhat
+        I work at Procore, a company that builds construction management cloud software. 
+        My focus is on front-end development.
+        In my free time I like to build somewhat
         useless things, absolutely useless things, and sometimes sorta useful
         things.
       </SummaryText>
