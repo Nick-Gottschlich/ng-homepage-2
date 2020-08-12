@@ -173,7 +173,7 @@ export default ({ data }) => (
       </ContactContainer>
       <ResumeLinkContainer>
         <ResumeLink
-          href={'https://nickpgott.com/files/CVforSite.pdf'}
+          href={'https://nickpgott.com/my-files/CVforSite.pdf'}
           target="_blank"
         >
           Resume

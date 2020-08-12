@@ -165,14 +165,14 @@ export default ({ data }) => (
       </ProjectContainer>
       {/* Binary Bros */}
       <ProjectLink
-        href="https://nickpgott.com/files/WebBuild/WebBuild.html"
+        href="https://nickpgott.com/my-files/WebBuild/WebBuild.html"
         target="_blank"
       >
         <ProjectTitle>Binary Bros</ProjectTitle>
       </ProjectLink>
       <ProjectContainer>
         <ProjectImage>
-          <a href="https://nickpgott.com/files/WebBuild/WebBuild.html">
+          <a href="https://nickpgott.com/my-files/WebBuild/WebBuild.html">
             <Img sizes={data.binaryBrosImage.sizes} />
           </a>
         </ProjectImage>
