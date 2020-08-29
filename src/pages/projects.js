@@ -96,7 +96,30 @@ export default ({ data }) => (
           </a>
         </ProjectImage>
         <ProjectSummaryText>
-          Completely free and open source social media management software I designed from the ground up. Fully installable with a GUI, it allows the user to automatically wipe their reddit and twitter posts, comments, tweets, and favorites, on a schedule, with modifiers to whitelist specific items based on user choice or quantifiers. Language: Python
+          Completely free and open source social media management software I designed from the ground up. Fully installable with a GUI, it allows the user to automatically wipe their reddit and twitter posts, comments, tweets, and favorites, on a schedule, with modifiers to whitelist specific items based on user choice or quantifiers.
+        </ProjectSummaryText>
+      </ProjectContainer>
+      {/* Log Off Bot */}
+      <ProjectLink
+        href="https://twitter.com/logoffb"
+        target="_blank"
+      >
+        <ProjectTitle>LogOffBot</ProjectTitle>
+      </ProjectLink>
+      <ProjectContainer>
+        <ProjectImage>
+          <a href="https://twitter.com/logoffb" target="_blank">
+            <Img sizes={data.logOffBotImage.sizes} />
+          </a>
+        </ProjectImage>
+        <ProjectSummaryText>
+          Twitter bot that tweets every 30 minutes telling you to log off twitter and go do something actually useful.{' '}
+          <a href="https://twitter.com/logoffb" target="_blank">
+            Twitter Account here
+          </a>.{' '}
+          <a href="https://github.com/Nick-Gottschlich/LogOffBot" target="_blank">
+            Source code here
+          </a>.
         </ProjectSummaryText>
       </ProjectContainer>
       {/* Tril */}
@@ -267,6 +290,11 @@ export const query = graphql`
       }
     }
     socialAmnesiaLogoImage: imageSharp(id: { regex: "assets/SocialAmnesiaLogo.png/" }) {
+      sizes {
+        ...GatsbyImageSharpSizes_tracedSVG
+      }
+    }
+    logOffBotImage: imageSharp(id: { regex: "assets/LogOffBot.png/" }) {
       sizes {
         ...GatsbyImageSharpSizes_tracedSVG
       }
