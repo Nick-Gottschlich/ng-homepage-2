@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "devicon": "^2.0.0",
-    "gatsby": "^1.9.247",
+    "gatsby": "^5.3.3",
     "gatsby-image": "^1.0.51",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-sharp": "^1.6.44",
